@@ -1,27 +1,65 @@
 {
   "name": "xmldom-instawork",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer).",
-  "keywords": ["w3c","dom","xml","parser","javascript","DOMParser","XMLSerializer"],
+  "keywords": [
+    "w3c",
+    "dom",
+    "xml",
+    "parser",
+    "javascript",
+    "DOMParser",
+    "XMLSerializer"
+  ],
   "author": "jindw <jindw@xidea.org> (http://www.xidea.org)",
   "homepage": "https://github.com/Instawork/xmldom",
-  "repository": {"type": "git","url": "git://github.com/jindw/xmldom.git"},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jindw/xmldom.git"
+  },
   "main": "./dom-parser.js",
-  "scripts" : {
+  "scripts": {
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "test": "proof platform win32 && proof test */*/*.t.js || t/test"
   },
-  "engines": {"node": ">=0.1"},
-  "dependencies": { "string.prototype.matchall": "3.0.1" },
-  "devDependencies": { "proof": "0.0.28" },
-  "maintainers": [{"name": "jindw","email": "jindw@xidea.org","url": "http://www.xidea.org"}],
-  "contributors": [
-    {"name" : "Yaron Naveh","email" : "yaronn01@gmail.com","web" : "http://webservices20.blogspot.com/"},
-    {"name" : "Harutyun Amirjanyan","email" : "amirjanyan@gmail.com","web" : "https://github.com/nightwing"},
-    {"name" : "Alan Gutierrez","email" : "alan@prettyrobots.com","web" : "http://www.prettyrobots.com/"}
+  "engines": {
+    "node": ">=0.1"
+  },
+  "dependencies": {
+    "string.prototype.matchall": "3.0.1"
+  },
+  "devDependencies": {
+    "proof": "0.0.28"
+  },
+  "maintainers": [
+    {
+      "name": "jindw",
+      "email": "jindw@xidea.org",
+      "url": "http://www.xidea.org"
+    }
   ],
-  "bugs": {"email": "engineering-contact@instawork.com","url": "http://github.com/Instawork/xmldom/issues"},
+  "contributors": [
+    {
+      "name": "Yaron Naveh",
+      "email": "yaronn01@gmail.com",
+      "web": "http://webservices20.blogspot.com/"
+    },
+    {
+      "name": "Harutyun Amirjanyan",
+      "email": "amirjanyan@gmail.com",
+      "web": "https://github.com/nightwing"
+    },
+    {
+      "name": "Alan Gutierrez",
+      "email": "alan@prettyrobots.com",
+      "web": "http://www.prettyrobots.com/"
+    }
+  ],
+  "bugs": {
+    "email": "engineering-contact@instawork.com",
+    "url": "http://github.com/Instawork/xmldom/issues"
+  },
   "license": "(LGPL-2.0 or MIT)"
 }
